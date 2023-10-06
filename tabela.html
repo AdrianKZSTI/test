@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+</head>
+
+<body>
+    
+    <title>Tabela</title>
+    <style>
+        tr, td{
+            border : 3px dotted black;
+            
+        }
+
+        table{
+            width: 100%;
+            border: 5px ridge black;
+            padding: 5px;
+        }
+        td {
+            text-align: center;
+            vertical-align: bottom;
+            height: 50px;
+        }
+        th{
+            border: 5px dashed black;
+        }
+        .naglowek{
+            background-color: aqua;
+        }
+        .wazne{
+            background-color: brown;
+        }
+        .info{
+            background-color: #ff0;
+        }
+        .row1{
+            background-color: #666;
+        }
+
+        .row2{
+            background-color: #444;
+        }
+        
+
+
+    </style>
+
+    <table>
+        
+        <tr>
+            <th>nagłówek1</th>
+            <th>nagłówek2</th>
+            <th >nagłówek3</th>
+            <th>nagłówek4</th>
+        </tr>
+        
+        <tr class="row1">
+
+            <td> Tekst1a</td>
+            <td > Tekst2a</td>
+            <td > Tekst3a</td>
+            <td rowspan="2"> Tekst4a</td>
+
+        </tr> 
+        
+        <tr class="row2">
+
+            <td> Tekst1b</td>
+            <td colspan="2"> Tekst3b</td>
+
+        </tr> 
+
+        <tr class="row1">
+
+            <td> Tekst1c</td>
+            <td> Tekst2c</td>
+            <td > Tekst3c</td>
+            <td> Tekst4c</td>
+
+        </tr> 
+        
+        <tr class="row2">
+
+            <td colspan="4"> Tekst1d</td>
+            
+
+        </tr> 
+    </table>
+
+</body>
+</html>
